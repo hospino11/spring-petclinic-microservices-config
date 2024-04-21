@@ -77,6 +77,8 @@ spring:
       on-profile: mysql
   sql.init.mode: always
   sql.init.platform: mysql
+  sql.init.schema-locations: classpath*:db/mysql/schema.sql
+  sql.init.data-locations: classpath*:db/mysql/data.sql
   datasource:
     schema: classpath*:db/mysql/schema.sql
     data: classpath*:db/mysql/data.sql
